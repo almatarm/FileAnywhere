@@ -1,0 +1,19 @@
+Objective
+===============
+A distributed set of servers that helps in getting files from anywhere
+
+Features & Requirements
+==============================
+1. Standalone server
+2. Search files by different parameters, e.g. name, size, date
+3. Each server has a set of input source where the search is done.
+    A. Input source can be: 
+          I. Local folder
+         II. Another FileAnywhere server 
+    B. An input source can be mirror on different server.
+          I. A mirror can have a subset of files only.
+         II. A mirror can start empty and act as a proxy for other mirrors, 
+             caching files as they are being requested.
+4. The server should be private and a secure token is required to get or search
+    files.
+5. File is identity by [FileAnywere_Server_ID : SOURCE_ID : File_PATH]
